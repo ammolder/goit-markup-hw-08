@@ -1,0 +1,44 @@
+.filter {
+  width: 611px;
+  height: 54px;
+  margin: 94px auto 34px;
+}
+.project {
+  margin-bottom: 94px;
+}
+.btn {
+  margin: 0px auto 50px;
+  display: flex;
+  justify-content: center;
+}
+.btn li + li {
+  margin-left: 8px;
+}
+.btn__filter {
+  padding: 6px 22px;
+
+  color: var(--title-text-color);
+  background-color: var(--bg-second);
+  box-shadow: none;
+  font-weight: 500;
+  font-size: $font-medium;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+
+		&:hover,
+		&:focus {
+			color: var(--primari-white-color);
+			background-color: var(--accent-color);
+			box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+				0px 3px 1px 0px #0000001a;
+		}
+}
+

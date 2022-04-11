@@ -1,0 +1,145 @@
+.header__container {
+	display: flex;
+  border-bottom: 1px solid var(--br-project__box);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  .logo {
+    display: inline-block;
+  }
+}
+/* Site-nav */
+
+.logo__accent {
+  margin-right: -4px;
+  color: var(--accent-color);
+}
+.logo__dark {
+  color: var(--title-text-color);
+}
+.logo__white {
+  color: var(--primari-white-color);
+}
+
+.logo__accent,
+.logo__dark,
+.logo__white {
+  font-family: $logo-font;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.cheader__container {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav__list,
+.contact {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.site-nav__list {
+  margin-left: 93px;
+}
+.site-nav__link,
+.contact__link {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav__link {
+  color: var(--title-text-color);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.site-nav__item + .site-nav__item {
+  margin-left: 50px;
+}
+
+.site-nav__link {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    opacity: 0;
+  }
+}
+
+.site-nav__link--current-studio,
+.site-nav__link--current-portfolio {
+  color: var(--accent-color);
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+//#portfolio {
+//  color: var(--accent-color);
+
+//  &::after {
+//    opacity: 1;
+//  }
+//}
+
+/* Contact */
+
+.site-nav,
+.contact {
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+.contact__item + .contact__item {
+  margin-left: 50px;
+}
+.contact {
+  margin-left: auto;
+}
+.contact__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primari-text-color);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.contact__icon {
+  margin-right: 10px;
+  fill: var(--primari-text-color);
+
+  transition: fill 250ms var(--timing-function);
+
+  .contact__link:hover &,
+  .contact__link:focus & {
+    fill: var(--accent-color);
+  }
+}

@@ -1,0 +1,82 @@
+.section__other-style{
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--bg-second);
+}
+.team {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.team__item{
+  background-color: var(--primari-white-color);
+  box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024,
+    0px 2px 1px #0000001f;
+
+		&:not(:first-child) {
+			margin-left: 30px;
+		}
+}
+
+.team__box{
+  padding: 30px 32px;
+}
+.team__title{
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: $font-medium;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.team__text{
+  font-size: $font-medium;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.social {
+  display: inline-flex;
+  justify-content: center;
+}
+.social__item + .social__item {
+  margin-left: 10px;
+}
+.social__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primari-white-color);
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+	}
+}
+
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  fill: var(--bg-icon);
+  transition: fill 250ms var(--timing-function);
+
+	.social__link:hover .instagram,
+	.social__link:focus .instagram,
+	.social__link:hover .twitter,
+	.social__link:focus .twitter,
+	.social__link:hover .facebook,
+	.social__link:focus .facebook,
+	.social__link:hover .linkedin,
+	.social__link:focus .linkedin {
+		fill: var(--primari-white-color);
+	}
+}

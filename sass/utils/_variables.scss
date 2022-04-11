@@ -1,0 +1,59 @@
+:root {
+  --title-text-color: #212121;
+  --primari-text-color: #757575;
+  --primari-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --hero-bgrcolor: #2f303a;
+  --bg-text-work: #2f303acc;
+  --bg-second: #f5f4fa;
+  --contact-footer: #ffffff99;
+  --bg-icon-footer: #ffffff0a;
+  --hover-btn-hero: #188ce8;
+  --br-project__box: #eeeeee;
+  --bg-icon: #afb1b8;
+  --bg-overflay: #2196f3e5;
+  --form-text-color: #75757580;
+  --modal__input--br: #21212133;
+  --br-email-footer: #ffffff4d;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$logo-font: Raleway, sans-serif;
+$base-font: Roboto, sans-serif;
+
+$font-paragraph: 14px;
+$font-title: 36px;
+$font-medium: 16px;
+
+.page {
+  background-color: var(--primari-white-color);
+  color: var(--primari-text-color);
+
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: $font-paragraph;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}

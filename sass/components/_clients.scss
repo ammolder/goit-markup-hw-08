@@ -1,0 +1,39 @@
+.section--clients {
+  padding: 94px 0px;
+}
+.clients__item {
+  display: inline-flex;
+
+		& + & {
+			margin-left: 30px;
+		}
+}
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--bg-icon);
+  margin-right: -4px;
+  border-radius: 4px;
+
+  transition: border 250ms var(--timing-function);
+
+	&:hover,
+	&:focus {
+		border: 1px solid var(--accent-color);
+	}
+}
+
+
+.client__logo {
+  fill: var(--bg-icon);
+  transition: fill 250ms var(--timing-function);
+
+	.client__link:hover &,
+	.client__link:focus & {
+		fill: var(--accent-color);
+	}
+}
+
