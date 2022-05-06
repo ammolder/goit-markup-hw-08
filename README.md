@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-Repository for #homework 8
+# goit-markup-hw-07
+Repository for hw#7

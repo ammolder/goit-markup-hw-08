@@ -1,16 +1,21 @@
 .header__container {
-	display: flex;
-  border-bottom: 1px solid var(--br-project__box);
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  .logo {
-    display: inline-block;
+  background-color: yellow;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
+  // @media screen and (min-width: $tablet) {
+  //   width: $tablet;
+  // }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    border-bottom: 1px solid var(--br-project__box);
+  }
+}
+.boroda-ryzha {
+  background-color: orangered;
+}
+.site-nav__logo {
+  display: inline-block;
 }
 /* Site-nav */
 

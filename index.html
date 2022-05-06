@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework#7</title>
+    <title>homework#8</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,21 +13,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="page">
     <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
         <nav class="site-nav">
-          <a class="logo" href="">
+          <a class="logo site-nav__logo" href="">
             <span class="logo__accent">Web</span>
-            <span class="">Studio</span>
+            <span class="logo__dark">Studio</span>
           </a>
 
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current-studio" href="./index.html"
+              <a
+                class="site-nav__link site-nav__link--current-studio"
+                href="./index.html"
                 >Студия</a
               >
             </li>
@@ -41,10 +43,7 @@
         </nav>
         <ul class="contact">
           <li class="contact__item">
-            <a
-              class="contact__link "
-              href="mailto:info@devstudio.com"
-            >
+            <a class="contact__link" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -52,10 +51,7 @@
             </a>
           </li>
           <li class="contact__item">
-            <a
-              class="contact__link "
-              href="tel:+380961111111"
-            >
+            <a class="contact__link" href="tel:+380961111111">
               <svg class="contact__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -81,9 +77,7 @@
       <!--Особенности  features-->
       <section class="section section--features">
         <div class="container">
-          <h2 class="section__title section__title--hidden">
-            Преимущества
-          </h2>
+          <h2 class="section__title section__title--hidden">Преимущества</h2>
           <ul class="features">
             <li class="features__item">
               <div class="features__box">
@@ -95,8 +89,6 @@
               <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
-
-
               </p>
             </li>
             <li class="features__item">
