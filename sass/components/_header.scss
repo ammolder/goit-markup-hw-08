@@ -1,18 +1,15 @@
 .header__container {
-  background-color: yellow;
   @media screen and (max-width: 767px) {
-    display: none;
+    // display: none;
+    height: 60px;
   }
-  // @media screen and (min-width: $tablet) {
-  //   width: $tablet;
-  // }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop) {
     display: flex;
     border-bottom: 1px solid var(--br-project__box);
   }
-}
-.boroda-ryzha {
-  background-color: orangered;
 }
 .site-nav__logo {
   display: inline-block;
@@ -39,28 +36,41 @@
   letter-spacing: 0.03em;
 }
 
-.cheader__container {
-  display: flex;
-  align-items: center;
-}
 .site-nav {
-  display: flex;
   align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 .site-nav__list,
 .contact {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
 }
 .site-nav__list {
-  margin-left: 93px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 .site-nav__link,
 .contact__link {
   display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .site-nav__link {
   color: var(--title-text-color);
@@ -119,11 +129,29 @@
   line-height: 1.7;
   letter-spacing: 0.02em;
 }
+// .contact__item {
+//   @media screen and ($tablet) {
+//     width: 138px;
+//   }
+// }
 .contact__item + .contact__item {
-  margin-left: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 50px;
+    margin-top: 0;
+  }
 }
 .contact {
   margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .contact__link {
   display: inline-flex;
@@ -147,4 +175,11 @@
   .contact__link:focus & {
     fill: var(--accent-color);
   }
+}
+.menu-mobile {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }

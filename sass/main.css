@@ -61,25 +61,16 @@ h2 {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-.header__container {
-  background-color: yellow;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 677px) {
   .header__container {
     display: none;
+    width: 480px;
   }
 }
 
@@ -89,11 +80,9 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid var(--br-project__box);
+    width: 1200px;
+    background-color: yellow;
   }
-}
-
-.boroda-ryzha {
-  background-color: orangered;
 }
 
 .site-nav__logo {
@@ -121,15 +110,6 @@ h2 {
   font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
-
-.cheader__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .site-nav {

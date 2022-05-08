@@ -4,9 +4,14 @@
 
   background-color: var(--title-text-color);
 }
-.footer__container{
-  display: flex;
-  align-items: baseline;
+.footer__container {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .adress__logo {
   display: block;
@@ -30,12 +35,11 @@
 
   transition: color 250ms var(--timing-function);
 
-		&:hover,
-		&:focus {
-			color: var(--accent-color);
-		}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-
 
 .footer__title {
   color: var(--primari-white-color);
@@ -65,10 +69,10 @@
 
   transition: background-color 250ms var(--timing-function);
 
-		&:hover,
-		&:focus {
-			background-color: var(--accent-color);
-		}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .join__instagram,
@@ -92,7 +96,12 @@
   font-weight: 700;
 }
 .subscribe__field {
-  display: inline-flex;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    display: inline-flex;
+  }
 }
 .subscribe-label {
   display: inline-flex;
@@ -109,35 +118,34 @@
   transition: border 250ms var(--timing-function),
     color 250ms var(--timing-function);
 
-		&:focus {
-			outline: none;
-			color: var(--primari-white-color);
-			border: 1px solid var(--accent-color);
-		}
-		&:-webkit-autofill {
-			border: 1px solid var(--br-email-footer);
-			-webkit-text-fill-color: var(--br-email-footer);
-			-webkit-box-shadow: 0 0 0px 1000px var(--title-text-color) inset;
-			box-shadow: 0 0 0px 1000px var(--title-text-color) inset;
-			transition: background-color 5000s ease-in-out 0s;
-		}
-		
-		&:-webkit-autofill:focus {
-			border: 1px solid var(--accent-color);
-			-webkit-text-fill-color: var(--primari-white-color);
-			caret-color: var(--primari-white-color);
-		}
-		
-		&::placeholder {
-			color: var(--br-email-footer);
-			transition: color 250ms var(--timing-function);
-		}
-		
-		&:focus::placeholder {
-			color: var(--accent-color);
-		}
-}
+  &:focus {
+    outline: none;
+    color: var(--primari-white-color);
+    border: 1px solid var(--accent-color);
+  }
+  &:-webkit-autofill {
+    border: 1px solid var(--br-email-footer);
+    -webkit-text-fill-color: var(--br-email-footer);
+    -webkit-box-shadow: 0 0 0px 1000px var(--title-text-color) inset;
+    box-shadow: 0 0 0px 1000px var(--title-text-color) inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 
+  &:-webkit-autofill:focus {
+    border: 1px solid var(--accent-color);
+    -webkit-text-fill-color: var(--primari-white-color);
+    caret-color: var(--primari-white-color);
+  }
+
+  &::placeholder {
+    color: var(--br-email-footer);
+    transition: color 250ms var(--timing-function);
+  }
+
+  &:focus::placeholder {
+    color: var(--accent-color);
+  }
+}
 
 .subscribe__send {
   position: relative;
@@ -149,10 +157,10 @@
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
 
-		&:focus {
-			outline: none;
-			border: 2px solid var(--br-email-footer);
-		}
+  &:focus {
+    outline: none;
+    border: 2px solid var(--br-email-footer);
+  }
 }
 
 .subscribe__text {
