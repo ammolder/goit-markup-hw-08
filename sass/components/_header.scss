@@ -1,18 +1,25 @@
+.header {
+  @media screen and (max-width: $max-mob) {
+    position: relative;
+  }
+}
 .header__container {
-  @media screen and (max-width: 767px) {
-    // display: none;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: $max-mob) {
     height: 60px;
   }
   @media screen and (min-width: $tablet) {
-    display: flex;
   }
   @media screen and (min-width: $desktop) {
-    display: flex;
     border-bottom: 1px solid var(--br-project__box);
   }
 }
 .site-nav__logo {
   display: inline-block;
+  // @media screen and (min-width: $desktop) {
+  //   display: inline-block;
+  // }
 }
 /* Site-nav */
 
@@ -35,17 +42,65 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+.menu-mobile {
+  @media screen and (max-width: $max-mob) {
+    display: inline-flex;
+    z-index: 1;
+    margin: 0 0 0 auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    .icon-cross {
+      display: none;
+    }
+    &.is-open .icon-cross {
+      display: block;
+    }
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
 
-.site-nav {
-  align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.box-nav {
+  @media screen and (max-width: $max-mob) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // height: 100%;
+    padding-top: 48px;
+    padding-left: 40px;
+
+    background-color: var(--primari-white-color);
+    &.is-open {
+      display: block;
+    }
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
+.site-nav {
+  align-items: center;
+  @media screen and (max-width: $max-mob) {
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
+}
 .site-nav__list,
 .contact {
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (max-width: $max-mob) {
     margin: 0px;
     padding: 0px;
   }
@@ -58,10 +113,8 @@
 .site-nav__list {
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 88px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 93px;
   }
 }
 .site-nav__link,
@@ -81,9 +134,20 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (max-width: $max-mob) {
+    font-size: 40px;
+    text-align: center;
+  }
 }
-.site-nav__item + .site-nav__item {
-  margin-left: 50px;
+.site-nav__item {
+  @media screen and (max-width: $max-mob) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 50px;
+  }
 }
 
 .site-nav__link {
@@ -135,6 +199,11 @@
 //   }
 // }
 .contact__item + .contact__item {
+  @media screen and (max-width: $max-mob) {
+    & {
+      margin-top: 32px;
+    }
+  }
   @media screen and (min-width: $tablet) {
     margin-top: 10px;
   }
@@ -144,13 +213,16 @@
   }
 }
 .contact {
-  margin-left: auto;
-
+  @media screen and (max-width: $max-mob) {
+    margin-bottom: 64px;
+  }
   @media screen and (min-width: $tablet) {
     display: block;
+    margin-left: auto;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
+    margin-left: auto;
   }
 }
 .contact__link {
@@ -164,6 +236,10 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (max-width: $max-mob) {
+    font-size: 32px;
+    line-height: 1.18;
+  }
 }
 .contact__icon {
   margin-right: 10px;
@@ -176,10 +252,33 @@
     fill: var(--accent-color);
   }
 }
-.menu-mobile {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+.messenger {
+  display: flex;
+  margin-bottom: 48px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-align: left;
+  @media screen and (min-width: $max-mob) {
+    display: none;
+  }
+}
+
+.messenger__item {
+  padding: 0 5px;
+}
+.messenger__item--padding {
+  padding-left: 0;
+}
+.messenger__item + .messenger__item {
+  border-left: solid 1px var(--modal__input--br);
+}
+.messenger__item {
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

@@ -19,59 +19,84 @@
     <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
-        <nav class="site-nav">
-          <a class="logo site-nav__logo" href="">
-            <span class="logo__accent">Web</span>
-            <span class="logo__dark">Studio</span>
-          </a>
-
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a
-                class="site-nav__link site-nav__link--current-studio"
-                href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__item">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-        <button class="menu-mobile" type="button">
-          <svg width="40px" height="40px">
-            <use href="./images/icons.svg#menu_mob"></use>
-            <use href="./images/icons.svg#close_mob"></use>
+        <a class="logo site-nav__logo" href="">
+          <span class="logo__accent">Web</span>
+          <span class="logo__dark">Studio</span>
+        </a>
+        <button
+          class="menu-mobile"
+          type="button"
+          aria-controls="menu-mobile"
+          aria-expanded="false"
+          data-menu-mobile
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu" href="./images/icons.svg#menu_mob"></use>
+            <use class="icon-cross" href="./images/icons.svg#cross_mob"></use>
           </svg>
         </button>
+        <div class="box-nav" id="menu-mobile" data-menu>
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--current-studio"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact">
+            <li class="contact__item">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="messenger">
+            <li class="messenger__item messenger__item--padding">
+              <a class="messenger__link" href=""></a>Instagram
+            </li>
+            <li class="messenger__item">
+              <a class="messenger__link" href=""></a>Twitter
+            </li>
+            <li class="messenger__item">
+              <a class="messenger__link" href=""></a>Facebook
+            </li>
+            <li class="messenger__item">
+              <a class="messenger__link" href=""></a>LinkedIn
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Герой -->
       <section class="hero">
-        <div class="container">
+        <div class="hero__container">
           <h1 class="hero__title">ЭФФЕКТИВНОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
 
           <button class="hero__btn" type="button" data-modal-open>
@@ -138,7 +163,7 @@
       </section>
 
       <!-- Чем занимаемся? -->
-      <section class="section section--padding-bottom">
+      <section class="section section--hidden">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work">
@@ -183,9 +208,9 @@
           <ul class="team">
             <li class="team__item">
               <img
+                class="team__img"
                 src="./images/staff/img1.jpg"
                 alt="Фото работника"
-                width="270"
               />
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -224,9 +249,9 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 src="./images/staff/img2.jpg"
                 alt="Фото работника"
-                width="270"
               />
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -265,9 +290,9 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 src="./images/staff/img3.jpg"
                 alt="Фото работника"
-                width="270"
               />
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -306,9 +331,9 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 src="./images/staff/img4.jpg"
                 alt="Фото работника"
-                width="270"
               />
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
@@ -350,7 +375,7 @@
       </section>
 
       <!-- Постоянные клиенты -->
-      <section class="section section--clients">
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients">
@@ -436,37 +461,39 @@
         </div>
 
         <div class="footer__box">
-          <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-          <ul class="join">
-            <li class="join__item">
-              <a class="join__icon" href="">
-                <svg class="join__instagram" width="20px" height="20px">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a class="join__icon" href="">
-                <svg class="join__twitter" width="20px" height="20px">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a class="join__icon" href="">
-                <svg class="join__facebook" width="20px" height="20px">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a class="join__icon" href="">
-                <svg class="join__linkedin" width="20px" height="20px">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="join">
+            <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <ul class="join__list">
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__instagram" width="20px" height="20px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__twitter" width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__facebook" width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__linkedin" width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <form class="subscribe">
@@ -545,5 +572,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-mob.js"></script>
   </body>
 </html>

@@ -117,8 +117,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .site-nav__list,
@@ -149,7 +149,8 @@ h2 {
   transition: color 250ms var(--timing-function);
 }
 
-.site-nav__link:hover, .site-nav__link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -204,14 +205,15 @@ h2 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: var(--primari-text-color);
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
 }
 
-.contact__link:hover, .contact__link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -234,8 +236,20 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-icon.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-icon.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(47, 48, 58, 0.4)),
+      to(rgba(47, 48, 58, 0.4))
+    ),
+    url(../images/hero/hero-icon.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-icon.jpg);
   background-color: var(--hero-bgrcolor);
 }
 
@@ -264,7 +278,8 @@ h2 {
   transition: background-color 2500ms var(--timing-function);
 }
 
-.hero__btn:hover, .hero__btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--hover-btn-hero);
 }
 
@@ -292,7 +307,7 @@ h2 {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -329,11 +344,11 @@ h2 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -369,11 +384,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 70px;
   font-weight: 700;
@@ -398,8 +413,10 @@ h2 {
 
 .team__item {
   background-color: var(--primari-white-color);
-  -webkit-box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024, 0px 2px 1px #0000001f;
-          box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024, 0px 2px 1px #0000001f;
+  -webkit-box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024,
+    0px 2px 1px #0000001f;
+  box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024,
+    0px 2px 1px #0000001f;
 }
 
 .team__item:not(:first-child) {
@@ -430,8 +447,8 @@ h2 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .social__item + .social__item {
@@ -443,11 +460,11 @@ h2 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--primari-white-color);
@@ -456,7 +473,8 @@ h2 {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social__link:hover, .social__link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -523,11 +541,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--bg-icon);
@@ -537,7 +555,8 @@ h2 {
   transition: border 250ms var(--timing-function);
 }
 
-.client__link:hover, .client__link:focus {
+.client__link:hover,
+.client__link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -563,8 +582,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .adress__logo {
@@ -594,7 +613,8 @@ h2 {
   transition: color 250ms var(--timing-function);
 }
 
-.adress__info:hover, .adress__info:focus {
+.adress__info:hover,
+.adress__info:focus {
   color: var(--accent-color);
 }
 
@@ -604,10 +624,16 @@ h2 {
   font-size: 14px;
   margin-top: 0px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .footer__box {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .join {
@@ -615,8 +641,8 @@ h2 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .join__item + .join__item {
@@ -628,11 +654,11 @@ h2 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--bg-icon-footer);
@@ -641,7 +667,8 @@ h2 {
   transition: background-color 250ms var(--timing-function);
 }
 
-.join__icon:hover, .join__icon:focus {
+.join__icon:hover,
+.join__icon:focus {
   background-color: var(--accent-color);
 }
 
@@ -686,8 +713,10 @@ h2 {
   border: 1px solid var(--br-email-footer);
   background-color: transparent;
   border-radius: 4px;
-  -webkit-transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
-  transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
+  -webkit-transition: border 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 
 .subscribe__email:focus {
@@ -773,7 +802,7 @@ h2 {
   top: 50%;
   left: 29px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   color: var(--primari-white-color);
   font-weight: 700;
   font-size: 16px;
@@ -786,7 +815,7 @@ h2 {
   right: 18px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin-left: 10px;
 }
 
@@ -812,11 +841,16 @@ h2 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: scale 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  transition: scale 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), scale 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), scale 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: scale 250ms var(--timing-function),
+    -webkit-transform 250ms var(--timing-function);
+  transition: scale 250ms var(--timing-function),
+    -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function),
+    scale 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function),
+    scale 250ms var(--timing-function),
+    -webkit-transform 250ms var(--timing-function);
   width: 528px;
   height: 581px;
   background-color: #fff;
@@ -824,7 +858,7 @@ h2 {
 
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal__close {
@@ -1017,12 +1051,13 @@ h2 {
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function),
+    -webkit-box-shadow 250ms var(--timing-function);
 }
 
 .form__checkbox:focus + .form__agreement {
   -webkit-box-shadow: 0 0 0 0.2em var(--bg-icon);
-          box-shadow: 0 0 0 0.2em var(--bg-icon);
+  box-shadow: 0 0 0 0.2em var(--bg-icon);
 }
 
 .form__condition {
@@ -1032,13 +1067,14 @@ h2 {
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function),
+    -webkit-box-shadow 250ms var(--timing-function);
 }
 
 .form__condition:focus {
   outline: none;
   -webkit-box-shadow: 0 0 0 0.1em var(--accent-color);
-          box-shadow: 0 0 0 0.1em var(--accent-color);
+  box-shadow: 0 0 0 0.1em var(--accent-color);
 }
 
 .form__button {
@@ -1046,7 +1082,7 @@ h2 {
   bottom: 40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 200px;
   height: 50px;
   color: var(--primari-white-color);
@@ -1060,13 +1096,14 @@ h2 {
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function),
+    -webkit-box-shadow 250ms var(--timing-function);
 }
 
 .form__button:focus {
   outline: none;
   -webkit-box-shadow: 0 0 0 0.2em var(--bg-icon);
-          box-shadow: 0 0 0 0.2em var(--bg-icon);
+  box-shadow: 0 0 0 0.2em var(--bg-icon);
 }
 
 .project__box {
@@ -1102,7 +1139,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .project__card:not(:nth-of-type(3n)) {
@@ -1116,16 +1153,20 @@ h2 {
 .project__link {
   display: block;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function),
+    -webkit-box-shadow 250ms var(--timing-function);
 }
 
-.project__link:hover, .project__link:focus {
-  -webkit-box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
-          box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+.project__link:hover,
+.project__link:focus {
+  -webkit-box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+    0px 1px 1px 0px #0000001f;
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+    0px 1px 1px 0px #0000001f;
 }
 
 /* Overflay */
@@ -1140,18 +1181,19 @@ h2 {
   width: 100%;
   height: 100%;
   -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function),
+    -webkit-transform 250ms var(--timing-function);
   background-color: var(--bg-overflay);
 }
 
 .project__link:hover .project__description::before,
 .project__link:focus .project__description::before {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .project__text {
@@ -1159,11 +1201,12 @@ h2 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 100%);
-          transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function),
+    -webkit-transform 250ms var(--timing-function);
   width: 322px;
   font-size: 18px;
   line-height: 1.56em;
@@ -1173,7 +1216,7 @@ h2 {
 .project__link:hover .project__text,
 .project__link:focus .project__text {
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .filter {
@@ -1192,8 +1235,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .btn li + li {
@@ -1205,7 +1248,7 @@ h2 {
   color: var(--title-text-color);
   background-color: var(--bg-second);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -1214,16 +1257,28 @@ h2 {
   text-align: center;
   border: none;
   border-radius: 4px;
-  -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    -webkit-box-shadow 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    -webkit-box-shadow 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    -webkit-box-shadow 250ms var(--timing-function);
 }
 
-.btn__filter:hover, .btn__filter:focus {
+.btn__filter:hover,
+.btn__filter:focus {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
-          box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
+  -webkit-box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
 /*# sourceMappingURL=main.css.map */
