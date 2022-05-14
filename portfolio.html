@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework#7</title>
+    <title>homework#8</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,48 +19,79 @@
     <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
-        <nav class="site-nav">
-          <a class="logo" href="">
-            <span class="logo__accent">Web</span>
-            <span class="logo__dark">Studio</span>
-          </a>
-
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current-portfolio" href="./portfolio.html"
-                >Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__item>
-            <a class="contact__link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="contact__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <a
-              class="contact__link"
-              href="tel:+380961111111"
-            >
-              <svg class="contact__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        <a class="logo site-nav__logo" href="">
+          <span class="logo__accent">Web</span>
+          <span class="logo__dark">Studio</span>
+        </a>
+        <button
+          class="menu-mobile"
+          type="button"
+          aria-controls="menu-mobile"
+          aria-expanded="false"
+          data-menu-mobile
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu" href="./images/icons.svg#menu_mob"></use>
+            <use class="icon-cross" href="./images/icons.svg#cross_mob"></use>
+          </svg></button
+        >∫
+        <div class="box-nav" id="menu-mobile" data-menu>
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--current-studio"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="box-contact">
+            <ul class="contact">
+              <li class="contact__item">
+                <a class="contact__link" href="mailto:info@devstudio.com">
+                  <svg class="contact__icon" width="16px" height="12px">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="tel:+380961111111">
+                  <svg class="contact__icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="messenger">
+              <li class="messenger__item messenger__item--padding">
+                <a class="messenger__link" href=""></a>Instagram
+              </li>
+              <li class="messenger__item">
+                <a class="messenger__link" href=""></a>Twitter
+              </li>
+              <li class="messenger__item">
+                <a class="messenger__link" href=""></a>Facebook
+              </li>
+              <li class="messenger__item">
+                <a class="messenger__link" href=""></a>LinkedIn
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -92,10 +123,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/1.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -103,7 +133,7 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="project__box">
+                <div class="project__box project__box--height">
                   <h2 class="project__name">Технокряк</h2>
                   <p class="project__direction">Веб-сайт</p>
                 </div>
@@ -113,10 +143,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/2.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -136,10 +165,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/3.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -157,10 +185,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/4.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -178,10 +205,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/5.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -199,10 +225,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/6.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -220,10 +245,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/7.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -241,10 +265,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/8.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -262,10 +285,9 @@
               <a class="project__link" href="./index.html">
                 <div class="project__description">
                   <img
+                    class="project__img"
                     src="./images/portfolio/9.jpg"
                     alt="Ноутбук с загруженным веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -285,79 +307,93 @@
     </main>
 
     <!-- Footer -->
-		<footer class="footer">
-			<div class="container footer__container">
-				<div class="footer__box">
-					<a class="logo" href="">
-						<span class="logo__accent">Web</span>
-						<span class="logo__white">Studio</span>
-					</a>
-		
-					<adress>
-						<ul class="adress">
-							<li>
-								<a class="adress__text" href="" rel="noopener noreferrer" target="_blank">г. Киев, пр-т Леси Украинки,
-									26</a>
-							</li>
-							<li>
-								<a class="adress__info" href="mailto:info@devstudio.com">info@devstudio.com</a>
-							</li>
-							<li>
-								<a class="adress__info" href="tel:+380961111111">+38 096 111 11 11</a>
-							</li>
-						</ul>
-					</adress>
-				</div>
-		
-				<div class="footer__box">
-					<div class="join">
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__box">
+          <a class="logo footer__logo" href="">
+            <span class="logo__accent">Web</span>
+            <span class="logo__white">Studio</span>
+          </a>
+
+          <adress>
+            <ul class="adress">
+              <li>
+                <a
+                  class="adress__text"
+                  href=""
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li>
+                <a class="adress__info" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="adress__info" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </adress>
+        </div>
+
+        <div class="footer__box">
+          <div class="join">
             <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-					<ul class="join__list">
-						<li class="join__item">
-							<a class="join__icon" href="">
-								<svg class="join__instagram" width="20px" height="20px">
-									<use href="./images/icons.svg#instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="join__item">
-							<a class="join__icon" href="">
-								<svg class="join__twitter" width="20px" height="20px">
-									<use href="./images/icons.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="join__item">
-							<a class="join__icon" href="">
-								<svg class="join__facebook" width="20px" height="20px">
-									<use href="./images/icons.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="join__item">
-							<a class="join__icon" href="">
-								<svg class="join__linkedin" width="20px" height="20px">
-									<use href="./images/icons.svg#linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+            <ul class="join__list">
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__instagram" width="20px" height="20px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__twitter" width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__facebook" width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__linkedin" width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-				</div>
-		
-				<form class="subscribe">
-					<p class="subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-					<div class="subscribe__field" role="group">
-						<input class="subscribe__email" type="email" name="subscribe" placeholder="E-mail" />
-						<button class="subscribe__send" type="submit">
-							<span class="subscribe__text">Подписаться</span>
-							<svg class="subscribe__icon" width="24px" height="24px">
-								<use href="./images/icons.svg#icon-send"></use>
-							</svg>
-						</button>
-					</div>
-				</form>
-			</div>
-		</footer>
+        </div>
+
+        <form class="subscribe">
+          <p class="subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <div class="subscribe__field" role="group">
+            <input
+              class="subscribe__email"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+            />
+            <button class="subscribe__send" type="submit">
+              <span class="subscribe__text">Подписаться</span>
+              <svg class="subscribe__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
