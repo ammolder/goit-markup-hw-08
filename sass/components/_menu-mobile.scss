@@ -1,0 +1,25 @@
+.menu-mobile {
+  @media screen and (max-width: $max-mob) {
+    display: inline-flex;
+    z-index: 1;
+    margin: 10px auto;
+    margin-right: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    .icon-cross {
+      display: none;
+    }
+    &.is-open .icon-cross {
+      display: block;
+      z-index: 4;
+    }
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
