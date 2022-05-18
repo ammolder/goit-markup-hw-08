@@ -1,7 +1,19 @@
+.project {
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
 .project__list {
   display: flex;
+
   flex-wrap: wrap;
-  // margin: 0 -15px;
+  z-index: 1;
+  @media screen and (min-width: 325px) and (max-width: 479px) {
+    justify-content: center;
+  }
 }
 .project__card {
   // margin-left: 15px;
@@ -59,9 +71,13 @@
 }
 .project__img {
   margin-right: 0;
+  @media screen and (min-width: 325px) and (max-width: 400px) {
+    width: 295px;
+  }
   @media screen and (min-width: $mobile) {
     width: 450px;
   }
+
   @media screen and (min-width: $tablet) {
     width: 354px;
   }
@@ -107,6 +123,9 @@
   margin-top: 0px;
   margin-bottom: 4px;
 
+  @media screen and (min-width: 325px) and (max-width: 400px) {
+    width: 249px;
+  }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 306px;
   }

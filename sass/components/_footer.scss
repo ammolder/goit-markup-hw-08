@@ -1,7 +1,7 @@
 .footer {
-  // @media screen and (max-width: $max-mob) {
-
-  // }
+  @media screen and (max-width: 385px) {
+    width: 100%;
+  }
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -14,6 +14,14 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
+  }
+}
+.footer__contact {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 594px;
+    justify-content: space-between;
+    margin: 0 auto 60px;
   }
 }
 .footer__logo {
@@ -118,7 +126,10 @@
 .subscribe {
   display: block;
   text-align: center;
-
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    margin: 0 auto;
+  }
   @media screen and (min-width: $desktop) {
     width: 570px;
     height: 86px;
@@ -139,6 +150,9 @@
 }
 .subscribe__field {
   @media screen and (max-width: $max-mob) {
+    display: block;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: block;
   }
   @media screen and (min-width: $desktop) {

@@ -6,13 +6,9 @@
 .header__container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--br-project__box);
   @media screen and (max-width: $max-mob) {
     height: 60px;
-  }
-  // @media screen and (min-width: $tablet) {
-  // }
-  @media screen and (min-width: $desktop) {
-    border-bottom: 1px solid var(--br-project__box);
   }
 }
 /* Site-nav */
@@ -51,18 +47,25 @@
 
 .box-nav {
   @media screen and (max-width: $max-mob) {
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2;
     padding: 48px 40px;
     background-color: var(--primari-white-color);
     &.is-open {
-      display: block;
+      display: flex;
       background-color: var(--primari-white-color);
     }
+  }
+  @media screen and (max-width: 385px) {
+    padding: 48px 20px;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -71,9 +74,10 @@
 }
 .site-nav {
   align-items: center;
-  // @media screen and (max-width: $max-mob) {
-  //   margin-bottom: 150px;
-  // }
+  @media screen and (min-width: $mobile) and (max-width: $max-mob) {
+    margin: 0 auto;
+    width: $mobile;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
     margin-left: 88px;
@@ -83,9 +87,10 @@
   }
 }
 .site-nav__list,
-.contact {
+.contact,
+.messenger {
   @media screen and (max-width: $max-mob) {
-    margin: 0px;
+    margin: 0 auto;
     padding: 0px;
   }
   @media screen and (min-width: $desktop) {
@@ -171,9 +176,10 @@
 
 /* Contact */
 .box-contact {
-  flex-direction: column;
-  // flex-direction: flex-end;
-  justify-content: space-between;
+  @media screen and (min-width: $mobile) and (max-width: $max-mob) {
+    margin: 0 auto;
+    width: $mobile;
+  }
   margin-left: auto;
 }
 
@@ -247,17 +253,29 @@
 }
 .messenger {
   display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-align: left;
+
   @media screen and (min-width: $max-mob) {
     display: none;
   }
 }
 
 .messenger__item {
+  @media screen and (min-width: 325px) and (max-width: 374px) {
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 386px) and (max-width: 414px) {
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 15px;
+    }
+  }
   padding: 0 5px;
 }
 .messenger__item--padding {

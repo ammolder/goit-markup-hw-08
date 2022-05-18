@@ -11,17 +11,19 @@
   display: flex;
   justify-content: center;
   margin-left: -8px;
-  @media screen and (max-width: $max-mobile) {
-    display: flex;
+  @media screen and (max-width: $max-mob) {
     flex-wrap: wrap;
-    width: 362px;
+    justify-content: flex-start;
   }
 }
-.btn li + li {
-  // margin-left: 8px;
-  margin-left: 8px;
-}
+
 .btn__filter {
+  margin-left: 8px;
+  @media screen and (max-width: $max-mob) {
+    &:not(:nth-of-type(3n)) {
+      margin-bottom: 15px;
+    }
+  }
   padding: 6px 22px;
 
   color: var(--title-text-color);
