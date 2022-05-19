@@ -8,5 +8,14 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  overflow-y: scroll;
+  &.modal-open {
+    @media screen and (min-width: 325px) {
+      overflow: hidden;
+    }
+  }
+  &.menu-open {
+    @media screen and (min-width: 325px) {
+      overflow: hidden;
+    }
+  }
 }

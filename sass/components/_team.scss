@@ -96,11 +96,13 @@
   background-color: var(--primari-white-color);
   border-radius: 50%;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 
   &:hover,
   &:focus {
     background-color: var(--accent-color);
+    fill: var(--primari-white-color);
   }
 }
 
@@ -119,6 +121,10 @@
   .social__link:focus .facebook,
   .social__link:hover .linkedin,
   .social__link:focus .linkedin {
+    fill: var(--primari-white-color);
+  }
+  .social__link:hover &,
+  .social__link:focus & {
     fill: var(--primari-white-color);
   }
 }

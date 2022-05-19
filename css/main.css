@@ -52,7 +52,18 @@ h2 {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  overflow-y: scroll;
+}
+
+@media screen and (min-width: 325px) {
+  .page.modal-open {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 325px) {
+  .page.menu-open {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -850,12 +861,13 @@ h2 {
   height: 44px;
   background-color: var(--primari-white-color);
   border-radius: 50%;
-  -webkit-transition: background-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
+  -webkit-transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
+  fill: var(--primari-white-color);
 }
 
 .instagram,
@@ -899,6 +911,20 @@ h2 {
 .linkedin .social__link:focus .facebook,
 .linkedin .social__link:hover .linkedin,
 .linkedin .social__link:focus .linkedin {
+  fill: var(--primari-white-color);
+}
+
+.social__link:hover .instagram,
+.social__link:focus .instagram, .social__link:hover
+.twitter,
+.social__link:focus
+.twitter, .social__link:hover
+.facebook,
+.social__link:focus
+.facebook, .social__link:hover
+.linkedin,
+.social__link:focus
+.linkedin {
   fill: var(--primari-white-color);
 }
 
@@ -1361,6 +1387,12 @@ h2 {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+@media screen and (max-width: 324px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
