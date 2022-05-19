@@ -11,18 +11,11 @@
     mobilMenuRef.classList.toggle("is-open");
   });
 })();
-// (() => {
-//   const refs = {
-//     openMenuBtn: document.querySelector("[data-hidden-open]"),
-//     // closeMenuBtn: document.querySelector("[data-menu-close]"),
-//     // menu: document.querySelector("[data-menu]"),
-//   };
+(() => {
+  const menuBtnRef = document.querySelector("[data-menu-hidden]");
+  const mobilMenuRef = document.querySelector("[menu-hidden]");
 
-//   refs.openMenuBtn.addEventListener("click", toggleMenu);
-//   // refs.closeMenuBtn.addEventListener("click", toggleMenu);
-
-//   function toggleMenu() {
-//     document.body.classList.toggle("menu-open");
-//     // refs.menu.classList.toggle("is-hidden");
-//   }
-// })();
+  menuBtnRef.addEventListener("click", () => {
+    const expanded = mobilMenuRef.classList.toggle("menu-open");
+  });
+})();
