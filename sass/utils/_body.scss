@@ -9,12 +9,12 @@
   letter-spacing: 0.03em;
 
   &.modal-open {
-    @media screen and (min-width: 325px) {
+    @media screen and (min-width: 320px) {
       overflow: hidden;
     }
   }
   &.menu-open {
-    @media screen and (min-width: 325px) {
+    @media screen and (min-width: 320px) {
       overflow: hidden;
     }
   }

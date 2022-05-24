@@ -266,7 +266,7 @@
 }
 
 .messenger__item {
-  @media screen and (min-width: 325px) and (max-width: 374px) {
+  @media screen and (min-width: 320px) and (max-width: 374px) {
     &:nth-last-of-type(n + 2) {
       margin-bottom: 15px;
     }

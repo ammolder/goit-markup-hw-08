@@ -11,7 +11,7 @@
 
   flex-wrap: wrap;
   z-index: 1;
-  @media screen and (min-width: 325px) and (max-width: 479px) {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     justify-content: center;
   }
 }
@@ -74,7 +74,7 @@
 }
 .project__img {
   margin-right: 0;
-  // @media screen and (min-width: 325px) and (max-width: 400px) {
+  // @media screen and (min-width: 320px) and (max-width: 400px) {
   //   width: 295px;
   // }
   @media screen and (min-width: $mobile) {
@@ -136,7 +136,7 @@
   margin-top: 0px;
   margin-bottom: 4px;
 
-  @media screen and (min-width: 325px) and (max-width: 400px) {
+  @media screen and (min-width: 320px) and (max-width: 400px) {
     width: 249px;
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
