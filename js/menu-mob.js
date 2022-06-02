@@ -13,7 +13,7 @@
 })();
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-hidden]");
-  const mobilMenuRef = document.querySelector("[menu-hidden]");
+  const mobilMenuRef = document.querySelector("body");
 
   menuBtnRef.addEventListener("click", () => {
     const expanded = mobilMenuRef.classList.toggle("menu-open");
