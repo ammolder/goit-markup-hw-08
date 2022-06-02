@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="page" menu-hidden>
+  <body class="page">
     <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
@@ -59,15 +59,24 @@
               <li class="contact__item">
                 <a class="contact__link" href="mailto:info@devstudio.com">
                   <svg class="contact__icon" width="16px" height="12px">
-                    <use href="./images/icons.svg#envelope"></use>
+                    <use
+                      class="contact__img"
+                      href="./images/icons.svg#envelope"
+                    ></use>
                   </svg>
                   info@devstudio.com
                 </a>
               </li>
               <li class="contact__item">
-                <a class="contact__link" href="tel:+380961111111">
+                <a
+                  class="contact__link contact__link--size"
+                  href="tel:+380961111111"
+                >
                   <svg class="contact__icon" width="10px" height="16px">
-                    <use href="./images/icons.svg#smartphone"></use>
+                    <use
+                      class="contact__img"
+                      href="./images/icons.svg#smartphone"
+                    ></use>
                   </svg>
                   +38 096 111 11 11
                 </a>
@@ -175,16 +184,20 @@
                       ./images/work/work1@2x.webp 740w
                     "
                     type="image/webp"
+                    sizes="370px"
                   />
-                  <img
-                    class="work__img"
+                  <source
                     srcset="
                       ./images/work/work1.jpg    370w,
                       ./images/work/work1@2x.jpg 740w
                     "
+                    type="image/jpeg"
+                    sizes="370px"
+                  />
+                  <img
+                    class="work__img"
                     src="./images/work/work1.jpg"
                     alt="Работник пишет код"
-                    sizes="33vw"
                   />
                 </picture>
 
@@ -200,19 +213,20 @@
                       ./images/work/work2@2x.webp 740w
                     "
                     type="image/webp"
+                    sizes="370px"
                   />
                   <source
                     srcset="
                       ./images/work/work2.jpg    370w,
                       ./images/work/work2@2x.jpg 740w
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
+                    sizes="370px"
                   />
                   <img
                     class="work__img"
                     src="./images/work/work2.jpg"
                     alt="Работник пишет код"
-                    sizes="33vw"
                   />
                 </picture>
                 <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
@@ -227,16 +241,20 @@
                       ./images/work/work3@2x.webp 740w
                     "
                     type="image/webp"
+                    sizes="370px"
                   />
-                  <img
-                    class="work__img"
+                  <source
                     srcset="
                       ./images/work/work3.jpg    370w,
                       ./images/work/work3@2x.jpg 740w
                     "
+                    type="image/jpeg"
+                    sizes="370px"
+                  />
+                  <img
+                    class="work__img"
                     src="./images/work/work3.jpg"
                     alt="Работник пишет код"
-                    sizes="33vw"
                   />
                 </picture>
                 <p class="work__text">ДИЗАЙНЕРСКОЕ РЕШЕНИЕ</p>
@@ -255,20 +273,30 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/team1.webp    270w,
-                    ./images/team/team1@2x.webp 540w
+                    ./images/team/team1-desk.jpg    1x,
+                    ./images/team/team1-desk@2x.jpg 2x
                   "
-                  type="image/webp"
+                  media="(min-width: 1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/team1-tab.jpg    1x,
+                    ./images/team/team1-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-mob.jpg    1x,
+                    ./images/team/team1-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
                 <img
                   class="team__img"
-                  srcset="
-                    images/team/team1.jpg    270w,
-                    images/team/team1@2x.jpg 540w
-                  "
-                  src="./images/team/team1.jpg"
+                  src="./images/team/team1-tab.jpg"
                   alt="Фото работника"
-                  sizes="100vw"
                 />
               </picture>
               <div class="team__box">
@@ -310,20 +338,30 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/team2.webp    270w,
-                    ./images/team/team2@2x.webp 540w
+                    ./images/team/team2-desk.jpg    1x,
+                    ./images/team/team2-desk@2x.jpg 2x
                   "
-                  type="image/webp"
+                  media="(min-width: 1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/team2-tab.jpg    1x,
+                    ./images/team/team2-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-mob.jpg    1x,
+                    ./images/team/team2-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
                 <img
                   class="team__img"
-                  srcset="
-                    images/team/team2.jpg    270w,
-                    images/team/team2@2x.jpg 540w
-                  "
-                  src="./images/team/team2.jpg"
+                  src="./images/team/team2-tab.jpg"
                   alt="Фото работника"
-                  sizes="100vw"
                 />
               </picture>
               <div class="team__box">
@@ -365,20 +403,30 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/team3.webp    270w,
-                    ./images/team/team3@2x.webp 540w
+                    ./images/team/team3-desk.jpg    1x,
+                    ./images/team/team3-desk@2x.jpg 2x
                   "
-                  type="image/webp"
+                  media="(min-width: 1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/team3-tab.jpg    1x,
+                    ./images/team/team3-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-mob.jpg    1x,
+                    ./images/team/team3-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
                 <img
                   class="team__img"
-                  srcset="
-                    images/team/team3.jpg    270w,
-                    images/team/team3@2x.jpg 540w
-                  "
-                  src="./images/team/team3.jpg"
+                  src="./images/team/team3-tab.jpg"
                   alt="Фото работника"
-                  sizes="100vw"
                 />
               </picture>
               <div class="team__box">
@@ -417,23 +465,33 @@
               </div>
             </li>
             <li class="team__item">
-              <picture class="team__img">
+              <picture>
                 <source
                   srcset="
-                    ./images/team/team4.webp    270w,
-                    ./images/team/team4@2x.webp 540w
+                    ./images/team/team4-desk.jpg    1x,
+                    ./images/team/team4-desk@2x.jpg 2x
                   "
-                  type="image/webp"
+                  media="(min-width: 1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/team4-tab.jpg    1x,
+                    ./images/team/team4-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-mob.jpg    1x,
+                    ./images/team/team4-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
                 <img
                   class="team__img"
-                  srcset="
-                    images/team/team4.jpg    270w,
-                    images/team/team4@2x.jpg 540w
-                  "
-                  src="./images/team/team4.jpg"
+                  src="./images/team/team4-tab.jpg"
                   alt="Фото работника"
-                  sizes="100vw"
                 />
               </picture>
               <div class="team__box">
@@ -537,11 +595,11 @@
               <span class="logo__white">Studio</span>
             </a>
 
-            <adress>
-              <ul class="adress">
+            <address>
+              <ul class="address">
                 <li>
                   <a
-                    class="adress__text"
+                    class="address__text"
                     href=""
                     rel="noopener noreferrer"
                     target="_blank"
@@ -549,53 +607,51 @@
                   >
                 </li>
                 <li>
-                  <a class="adress__info" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
+                  <a class="address__info" href="mailto:info@devstudio.com"
+                    >info@devstudio. com</a
                   >
                 </li>
                 <li>
-                  <a class="adress__info" href="tel:+380961111111"
+                  <a class="address__info" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
-            </adress>
+            </address>
           </div>
 
           <div class="footer__box">
-            <div class="join">
-              <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-              <ul class="join__list">
-                <li class="join__item">
-                  <a class="join__icon" href="">
-                    <svg class="join__instagram" width="20px" height="20px">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join__item">
-                  <a class="join__icon" href="">
-                    <svg class="join__twitter" width="20px" height="20px">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join__item">
-                  <a class="join__icon" href="">
-                    <svg class="join__facebook" width="20px" height="20px">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join__item">
-                  <a class="join__icon" href="">
-                    <svg class="join__linkedin" width="20px" height="20px">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <ul class="join__list">
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__instagram" width="20px" height="20px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__twitter" width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__facebook" width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a class="join__icon" href="">
+                  <svg class="join__linkedin" width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -659,12 +715,7 @@
             ></textarea>
           </label>
           <label class="form__deal">
-            <input
-              class="form__checkbox"
-              type="checkbox"
-              name="agreement"
-              checked
-            />
+            <input class="form__checkbox" type="checkbox" name="agreement" />
             <span class="form__agreement"></span>
             Соглашаюсь с рассылкой и принимаю
             <a class="form__condition" href="">Условия договора</a>
@@ -682,12 +733,5 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <!-- <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script> -->
   </body>
 </html>

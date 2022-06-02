@@ -7,12 +7,14 @@
   }
 }
 .project__list {
-  display: flex;
-
-  flex-wrap: wrap;
-  z-index: 1;
   @media screen and (min-width: 320px) and (max-width: 479px) {
     justify-content: center;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    flex-wrap: wrap;
+    z-index: 1;
   }
 }
 .project__card {
@@ -74,11 +76,8 @@
 }
 .project__img {
   margin-right: 0;
-  // @media screen and (min-width: 320px) and (max-width: 400px) {
-  //   width: 295px;
-  // }
-  @media screen and (min-width: $mobile) {
-    width: 450px;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
   }
 
   @media screen and (min-width: $tablet) {
@@ -120,9 +119,16 @@
   border-bottom: 1px solid var(--br-project__box);
   border-left: 1px solid var(--br-project__box);
 }
+.project__link--height {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .project__box--height {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    padding-bottom: 56px;
+    flex-grow: 1;
   }
 }
 .project__name {

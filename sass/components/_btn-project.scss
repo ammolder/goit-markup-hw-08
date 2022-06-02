@@ -7,7 +7,7 @@
 //   margin: 94px 0;
 // }
 .btn {
-  margin: 0px auto 50px;
+  margin: 0px auto 40px;
   display: flex;
   justify-content: center;
   margin-left: -8px;
@@ -15,15 +15,28 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
-.btn__filter {
+.btn__list {
   margin-left: 8px;
-  @media screen and (max-width: $max-mob) {
-    &:not(:nth-of-type(3n)) {
+  @media screen and (max-width: 367px) {
+    &:nth-last-of-type(n + 2) {
       margin-bottom: 15px;
     }
   }
+  @media screen and (min-width: 368px) and (max-width: $max-mob) {
+    &:nth-of-type(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+}
+.btn__filter {
   padding: 6px 22px;
 
   color: var(--title-text-color);

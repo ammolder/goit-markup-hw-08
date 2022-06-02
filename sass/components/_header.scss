@@ -1,4 +1,6 @@
 .header {
+  border-bottom: 1px solid var(--br-project__box);
+
   @media screen and (max-width: $max-mob) {
     position: relative;
   }
@@ -6,7 +8,6 @@
 .header__container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--br-project__box);
   @media screen and (max-width: $max-mob) {
     height: 60px;
   }
@@ -69,7 +70,9 @@
   }
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
     width: 100%;
+    margin-left: 88px;
   }
 }
 .site-nav {
@@ -77,13 +80,6 @@
   @media screen and (min-width: $mobile) and (max-width: $max-mob) {
     margin: 0 auto;
     width: $mobile;
-  }
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    margin-left: 88px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-left: 93px;
   }
 }
 .site-nav__list,
@@ -135,7 +131,9 @@
     }
   }
   @media screen and (min-width: $tablet) {
-    margin-left: 50px;
+    &:not(:first-of-type) {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -159,10 +157,12 @@
 
 .site-nav__link--current-studio,
 .site-nav__link--current-portfolio {
-  color: var(--accent-color);
+  @media screen and (min-width: $tablet) {
+    color: var(--accent-color);
 
-  &::after {
-    opacity: 1;
+    &::after {
+      opacity: 1;
+    }
   }
 }
 
@@ -193,22 +193,10 @@
 //     width: 138px;
 //   }
 // }
-.contact__item + .contact__item {
-  @media screen and (max-width: $max-mob) {
-    & {
-      margin-top: 32px;
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    margin-top: 10px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-left: 50px;
-    margin-top: 0;
-  }
-}
 .contact {
   @media screen and (max-width: $max-mob) {
+    display: flex;
+    flex-direction: column-reverse;
     margin-bottom: 64px;
   }
   @media screen and (min-width: $tablet) {
@@ -220,6 +208,21 @@
     margin-left: auto;
   }
 }
+.contact__item + .contact__item {
+  @media screen and (max-width: $max-mob) {
+    & {
+      margin-bottom: 32px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 50px;
+    margin-top: 0;
+  }
+}
+
 .contact__link {
   display: inline-flex;
   align-items: center;
@@ -231,16 +234,23 @@
   &:focus {
     color: var(--accent-color);
   }
-  // @media screen and (max-width: $max-mob) {
-  //   font-size: 32px;
-  //   line-height: 1.18;
-  // }
-
-  @media screen and (max-width: 1199px) {
+  font-size: 24px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+.contact__link--size {
+  @media screen and (max-width: $max-mob) {
+    font-size: 34px;
+    color: var(--accent-color);
   }
 }
 .contact__icon {
+  display: none;
+
   margin-right: 10px;
   fill: var(--primari-text-color);
 
@@ -249,6 +259,9 @@
   .contact__link:hover &,
   .contact__link:focus & {
     fill: var(--accent-color);
+  }
+  @media screen and (min-width: $tablet) {
+    display: block;
   }
 }
 .messenger {
@@ -266,6 +279,9 @@
 }
 
 .messenger__item {
+  @media screen and (max-width: $max-mob) {
+    color: var(--accent-color);
+  }
   @media screen and (min-width: 320px) and (max-width: 374px) {
     &:nth-last-of-type(n + 2) {
       margin-bottom: 15px;

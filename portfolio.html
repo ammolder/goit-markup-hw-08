@@ -100,19 +100,19 @@
         <div class="container">
           <h1 class="project__title project__title--hidden">Фильтр</h1>
           <ul class="btn">
-            <li>
+            <li class="btn__list">
               <button class="btn__filter" type="button">Все</button>
             </li>
-            <li>
+            <li class="btn__list">
               <button class="btn__filter" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="btn__list">
               <button class="btn__filter" type="button">Приложения</button>
             </li>
-            <li>
+            <li class="btn__list">
               <button class="btn__filter" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="btn__list">
               <button class="btn__filter" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -120,26 +120,37 @@
           <h1 class="project__title project__title--hidden">Наши работы</h1>
           <ul class="project__list">
             <li class="project__card">
-              <a class="project__link" href="./index.html">
+              <a
+                class="project__link project__link--height"
+                href="./index.html"
+              >
                 <div class="project__description">
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card1.webp    1x,
-                        ./images/portfolio/card1@2x.webp 2x
+                        ./images/portfolio/card1-desk.jpg    1x,
+                        ./images/portfolio/card1-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card1.jpg    1x,
-                        ./images/portfolio/card1@2x.jpg 2x
+                        ./images/portfolio/card1-tab.jpg    1x,
+                        ./images/portfolio/card1-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card1-mob.jpg    1x,
+                        ./images/portfolio/card1-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card1.jpg"
+                      src="./images/portfolio/card1-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -161,21 +172,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card2.webp    1x,
-                        ./images/portfolio/card2@2x.webp 2x
+                        ./images/portfolio/card2-desk.jpg    1x,
+                        ./images/portfolio/card2-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card2.jpg    1x,
-                        ./images/portfolio/card2@2x.jpg 2x
+                        ./images/portfolio/card2-tab.jpg    1x,
+                        ./images/portfolio/card2-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card2-mob.jpg    1x,
+                        ./images/portfolio/card2-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card2.jpg"
+                      src="./images/portfolio/card2-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -199,21 +218,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card3.webp    1x,
-                        ./images/portfolio/card3@2x.webp 2x
+                        ./images/portfolio/card3-desk.jpg    1x,
+                        ./images/portfolio/card3-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card3.jpg    1x,
-                        ./images/portfolio/card3@2x.jpg 2x
+                        ./images/portfolio/card3-tab.jpg    1x,
+                        ./images/portfolio/card3-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card3-mob.jpg    1x,
+                        ./images/portfolio/card3-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card3.jpg"
+                      src="./images/portfolio/card3-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -235,21 +262,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card4.webp    1x,
-                        ./images/portfolio/card4@2x.webp 2x
+                        ./images/portfolio/card1-desk.jpg    1x,
+                        ./images/portfolio/card1-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card4.jpg    1x,
-                        ./images/portfolio/card4@2x.jpg 2x
+                        ./images/portfolio/card4-tab.jpg    1x,
+                        ./images/portfolio/card4-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card4-mob.jpg    1x,
+                        ./images/portfolio/card4-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card4.jpg"
+                      src="./images/portfolio/card4-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -271,21 +306,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card5.webp    1x,
-                        ./images/portfolio/card5@2x.webp 2x
+                        ./images/portfolio/card5-desk.jpg    1x,
+                        ./images/portfolio/card5-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card5.jpg    1x,
-                        ./images/portfolio/card5@2x.jpg 2x
+                        ./images/portfolio/card5-tab.jpg    1x,
+                        ./images/portfolio/card5-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card5-mob.jpg    1x,
+                        ./images/portfolio/card5-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card5.jpg"
+                      src="./images/portfolio/card5-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -307,21 +350,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card6.webp    1x,
-                        ./images/portfolio/card6@2x.webp 2x
+                        ./images/portfolio/card6-desk.jpg    1x,
+                        ./images/portfolio/card6-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card6.jpg    1x,
-                        ./images/portfolio/card6@2x.jpg 2x
+                        ./images/portfolio/card6-tab.jpg    1x,
+                        ./images/portfolio/card6-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card6-mob.jpg    1x,
+                        ./images/portfolio/card6-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card6.jpg"
+                      src="./images/portfolio/card6-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -343,21 +394,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card7.webp    1x,
-                        ./images/portfolio/card7@2x.webp 2x
+                        ./images/portfolio/card7-desk.jpg    1x,
+                        ./images/portfolio/card7-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card7.jpg    1x,
-                        ./images/portfolio/card7@2x.jpg 2x
+                        ./images/portfolio/card7-tab.jpg    1x,
+                        ./images/portfolio/card7-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card7-mob.jpg    1x,
+                        ./images/portfolio/card7-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card7.jpg"
+                      src="./images/portfolio/card7-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -379,21 +438,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card8.webp    1x,
-                        ./images/portfolio/card8@2x.webp 2x
+                        ./images/portfolio/card8-desk.jpg    1x,
+                        ./images/portfolio/card8-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card8.jpg    1x,
-                        ./images/portfolio/card8@2x.jpg 2x
+                        ./images/portfolio/card8-tab.jpg    1x,
+                        ./images/portfolio/card8-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card8-mob.jpg    1x,
+                        ./images/portfolio/card8-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card8.jpg"
+                      src="./images/portfolio/card8-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -415,21 +482,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/card9.webp    1x,
-                        ./images/portfolio/card9@2x.webp 2x
+                        ./images/portfolio/card9-desk.jpg    1x,
+                        ./images/portfolio/card9-desk@2x.jpg 2x
                       "
-                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/card9.jpg    1x,
-                        ./images/portfolio/card9@2x.jpg 2x
+                        ./images/portfolio/card9-tab.jpg    1x,
+                        ./images/portfolio/card9-tab@2x.jpg 2x
                       "
-                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/portfolio/card9-mob.jpg    1x,
+                        ./images/portfolio/card9-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
                     <img
                       class="project__img"
-                      src="./images/portfolio/card9.jpg"
+                      src="./images/portfolio/card9-tab.jpg"
                       alt="Ноутбук с загруженным веб-сайтом"
                     />
                   </picture>
@@ -460,11 +535,11 @@
               <span class="logo__white">Studio</span>
             </a>
 
-            <adress>
-              <ul class="adress">
+            <address>
+              <ul class="address">
                 <li>
                   <a
-                    class="adress__text"
+                    class="address__text"
                     href=""
                     rel="noopener noreferrer"
                     target="_blank"
@@ -472,17 +547,17 @@
                   >
                 </li>
                 <li>
-                  <a class="adress__info" href="mailto:info@devstudio.com"
+                  <a class="address__info" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
                 <li>
-                  <a class="adress__info" href="tel:+380961111111"
+                  <a class="address__info" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
-            </adress>
+            </address>
           </div>
 
           <div class="footer__box">
